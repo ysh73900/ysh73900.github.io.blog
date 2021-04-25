@@ -1,0 +1,330 @@
+body {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.wrapper {
+  width:100%;
+  height: 100vh;
+  min-height: 40cm;
+  background-image: url(../image/background.jpg);
+  background-size:cover;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:rgba(0,0,0,.3);
+  font-family: 'Fredoka One', cursive;
+  padding: 8px 12px;
+  }
+  
+  .navbar_logo {
+    font-size: 24px;
+    color: white;
+  }
+
+  .navbar_logo h1 {
+    margin: 0;
+  }
+  
+  span {
+    color : #1DC4E7;
+  }
+  
+  .navbar_menu {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+
+  }
+  
+
+
+  .navbar_menu li a {
+    display : inline-block;
+    color: #fff;
+    padding: 10px;
+    margin:0px 10px;
+    font-size:20px;
+    font-family: 'Fredoka One', sans-serif;
+  }
+  
+  .navbar_menu li:hover{
+    background: #1DC4E7;
+  
+    border-radius: 4px;
+  }
+
+  .navbar_icons {
+    list-style: none;
+    color:white;
+    display:flex;
+    padding-left:0;
+    font-size:24px;
+  }
+
+  .navbar_icons li {
+    padding: 8px 12px;
+  }
+  
+  
+
+
+section {
+  margin: 0 300px;
+}
+
+  
+  .profile_animation {
+    animation: change 2s forwards;
+    opacity: 0;
+    position: relative;
+  }
+  
+  @keyframes change {
+    0% {
+      left : -200em;
+      opacity: -1;
+    }
+  50% {
+  left: 0em;
+  
+  }
+  
+    100% {
+      left : 0em;
+      opacity: 1;
+    }
+  }
+  
+  
+  
+
+.box h1 {
+  font-family: 'Fredoka One', cursive;
+  color:#fff;
+  padding-left:40px;
+
+}
+
+  .lshimg {
+    width:300px;
+    height:300px;
+    border-radius: 30%;
+    
+  }
+  
+  .profile {
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: row;
+    
+  }
+  
+  .profile ul {
+    margin-top:0px;
+    list-style: none;
+  }
+  
+  .profile li {
+    color:white;
+    font-size : 30px;
+    margin-bottom : 20px;
+    font-family: 'Jua', sans-serif;
+  }
+  
+  .profile > ul > li > span {
+    color: #1DC4E7;
+  }
+
+.skill {
+  display: flex;
+  flex-direction: column;
+}
+
+.sk_info {
+  display: flex;
+  flex-direction: row;
+  padding:0px 40px;
+  color: #fff;
+  font-family: 'Jua', sans-serif;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1380px) {
+  .profile li {
+    font-size : 20px;
+  }
+}
+
+
+
+@media screen and (max-width: 1000px) {
+  .box h1 {
+    position: relative;
+    left:-300px;
+  }
+  
+  .profile {
+  position: relative;
+  left:-300px;
+  
+  }
+  
+  .lshimg {
+    width:200px;
+    height:200px;
+  }
+  
+  .profile li {
+    width: 250px;
+  font-size:20px;
+  
+  }
+  
+  
+  .sk_info {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    color: #fff;
+    font-family: 'Jua', sans-serif;
+    position: relative;
+    left:-250px;
+  }
+  
+  .sk_info p {
+    width:400px;
+  }
+}
+  
+
+
+@media screen and (max-width: 768px) {
+    
+.wrapper {
+  min-height: 50cm;
+}
+
+
+.box h1 {
+  position: relative;
+  left:-300px;
+}
+
+.profile {
+position: relative;
+left:-300px;
+
+}
+
+.lshimg {
+  width:200px;
+  height:200px;
+}
+
+.profile li {
+  width: 250px;
+font-size:20px;
+
+}
+
+.sk_info {
+  position: relative;
+  left: -250px;
+}
+
+
+.sk_info p {
+  width:280px;
+}
+
+
+.navbar {
+  flex-direction: column;
+  align-items: flex-start;
+ padding: 8px 24px;
+}
+
+.navbar_logo {
+  margin:0;
+
+}
+
+.navbar_menu {
+
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar_menu li {
+  width:100%;
+  text-align: center;
+}
+
+
+.navbar_icons {
+  justify-content: center;
+  width:100%;
+  font-size: 24px;
+}
+
+
+
+.skill {
+  
+  display : block;
+  align-items:  center;
+  color: #fff;
+  font-family: 'Jua', sans-serif;
+}
+  }
+
+
+  @media screen and (max-width:499px) {
+
+
+    .wrapper {
+      min-height: 55cm;
+    }
+    .lshimg {
+      width:150px;
+      height:150px;
+    }
+
+    .profile ul {
+      padding:0px 10px;
+    }
+    
+    .profile li {
+      width: 150px;
+    font-size:15px;
+    
+    }
+
+    .sk_info {
+      position: relative;
+      left:-250px;
+      
+    }
+    
+    .sk_info p {
+      width:250px;
+    }
+  }
+
+

@@ -1,0 +1,188 @@
+body {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../image/background.jpg);
+  background-size:cover;
+}
+
+
+
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:rgba(0,0,0,.3);
+  font-family: 'Fredoka One', cursive;
+  padding: 8px 12px;
+  }
+  
+  .navbar_logo {
+    font-size: 24px;
+    color: white;
+  }
+
+  .navbar_logo h1 {
+    margin: 0;
+  }
+  
+  span {
+    color : #1DC4E7;
+  }
+  
+  .navbar_menu {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+
+  }
+  
+  .navbar_menu li a {
+    display : inline-block;
+    color: #fff;
+    padding: 10px;
+    margin:0px 10px;
+    font-size:20px;
+    font-family: 'Fredoka One', sans-serif;
+  }
+  
+  .navbar_menu li:hover{
+    background: #1DC4E7;
+  
+    border-radius: 4px;
+  }
+
+  .navbar_icons {
+    list-style: none;
+    color:white;
+    display:flex;
+    padding-left:0;
+    font-size:24px;
+  }
+
+  .navbar_icons li {
+    padding: 8px 12px;
+  }
+
+
+
+
+
+.dashbord {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color:white;
+  margin-top: 230px;
+  font-family: 'Fredoka One', sans-serif;
+}
+
+.dashbord h1 {
+  font-size: 100px;
+}
+
+
+
+.box {
+  margin: 200px;
+  height: 500px;
+  border-radius: 30px;
+  background-color: rgba(0,0,0,.5);
+}
+
+.profile_animation {
+  animation: change 2s forwards;
+  opacity: 0;
+  position: relative;
+}
+
+@keyframes change {
+  0% {
+    left : -200em;
+    opacity: -1;
+  }
+50% {
+left: 0em;
+
+}
+
+  100% {
+    left : 0em;
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .dashbord h1 {
+    font-size: 60px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    min-height:0;
+  }
+  
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+   padding: 8px 24px;
+  }
+  
+  .navbar_logo {
+    margin:0;
+  
+  }
+  
+  .navbar_menu {
+  
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .navbar_menu li {
+    width:100%;
+    text-align: center;
+  }
+  
+
+  
+  .navbar_icons {
+    justify-content: center;
+    width:100%;
+    font-size: 24px;
+  }
+
+
+  
+
+  .dashbord h1 {
+    margin:0;
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width:410px) {
+  .dashbord {
+    margin-top: 100px;
+  }
+
+  .dashbord h1 {
+    font-size:30px;
+  }
+}
